@@ -1,0 +1,35 @@
+<h1>Listing mypages</h1>
+
+<table>
+  <tr>
+    <th>Rails</th>
+    <th>Generate</th>
+    <th>Scaffold</th>
+    <th>Mypage</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Ontime</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mypages.each do |mypage| %>
+  <tr>
+    <td><%= mypage.rails %></td>
+    <td><%= mypage.generate %></td>
+    <td><%= mypage.scaffold %></td>
+    <td><%= mypage.mypage %></td>
+    <td><%= mypage.name %></td>
+    <td><%= mypage.address %></td>
+    <td><%= mypage.ontime %></td>
+    <td><%= link_to 'Show', mypage %></td>
+    <td><%= link_to 'Edit', edit_mypage_path(mypage) %></td>
+    <td><%= link_to 'Destroy', mypage, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mypage', new_mypage_path %>

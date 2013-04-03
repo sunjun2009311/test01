@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rails: MyString
+  generate: MyString
+  scaffold: MyString
+  mypage: MyString
+  name: MyString
+  address: MyString
+  ontime: 2013-03-29 00:31:22
+
+two:
+  rails: MyString
+  generate: MyString
+  scaffold: MyString
+  mypage: MyString
+  name: MyString
+  address: MyString
+  ontime: 2013-03-29 00:31:22

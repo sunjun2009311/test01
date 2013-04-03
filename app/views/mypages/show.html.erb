@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Rails:</b>
+  <%= @mypage.rails %>
+</p>
+
+<p>
+  <b>Generate:</b>
+  <%= @mypage.generate %>
+</p>
+
+<p>
+  <b>Scaffold:</b>
+  <%= @mypage.scaffold %>
+</p>
+
+<p>
+  <b>Mypage:</b>
+  <%= @mypage.mypage %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @mypage.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @mypage.address %>
+</p>
+
+<p>
+  <b>Ontime:</b>
+  <%= @mypage.ontime %>
+</p>
+
+
+<%= link_to 'Edit', edit_mypage_path(@mypage) %> |
+<%= link_to 'Back', mypages_path %>
